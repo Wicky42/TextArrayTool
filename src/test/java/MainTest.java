@@ -20,4 +20,13 @@ class MainTest {
         assertTrue(Main.containsEmptyStrings(TestData.INVALID_STRINGS));
     }
 
+    @Test
+    void countCharsTotal_shouldReturnCorrectly_WhenCalledWithValidData(){
+        //GIVEN
+        String[] data = TestData.VALID_STRINGS;
+        int expetedCount = 25;
+
+        assertEquals(expetedCount, Main.countCharsTotal(data));
+    }
+
 }

@@ -13,4 +13,9 @@ public class Main {
         }
         return false;
     }
+
+    //TODO
+    public static int countCharsTotal(String[] data) {
+        return 0;
+    }
 }
