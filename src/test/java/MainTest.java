@@ -29,4 +29,9 @@ class MainTest {
         assertEquals(expetedCount, Main.countCharsTotal(data));
     }
 
+    @Test
+    void countCharsTotal_shouldThrowException_whenCalledWithInvalidData(){
+        assertThrows(IllegalArgumentException.class, ()->Main.countCharsTotal(TestData.INVALID_STRINGS));
+    }
+
 }
