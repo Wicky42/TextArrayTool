@@ -15,4 +15,9 @@ class MainTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void containsEmptyStrings_shouldReturnTrue_whenCalledWithInvalidStrings(){
+        assertTrue(Main.containsEmptyStrings(TestData.INVALID_STRINGS));
+    }
+
 }
