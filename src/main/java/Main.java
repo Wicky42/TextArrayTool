@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void main(String[] args){
+    static void main(String[] args){
 
     }
 
@@ -13,9 +13,15 @@ public class Main {
         }
         return false;
     }
-
-    //TODO
+    
     public static int countCharsTotal(String[] data) {
-        return 0;
+        if(containsEmptyStrings(data)){
+            throw new IllegalArgumentException("Der Datensatz enthält leere Zeilen oder ist beshädigt.");
+        }
+        int count =0;
+        for(String s : data){
+            count += s.length();
+        }
+        return count;
     }
 }
